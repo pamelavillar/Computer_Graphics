@@ -40,7 +40,7 @@ bool Textura::cargar(const std::string& ruta) {
     return true;
 }
 
-void Textura::usar() const {
-    //glActiveTexture(GL_TEXTURE0 + unidad);
+void Textura::usar(unsigned int unidad) const {
+    glActiveTexture(GL_TEXTURE0 + unidad);
     glBindTexture(GL_TEXTURE_2D, id);
 }

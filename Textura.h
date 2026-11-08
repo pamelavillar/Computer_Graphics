@@ -18,7 +18,7 @@ public:
     Textura& operator=(const Textura&) = delete;
 
     bool cargar(const std::string& ruta);
-    void usar() const;
+    void usar(unsigned int unidad = 0) const;
 };
 
 #endif

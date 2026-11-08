@@ -190,7 +190,7 @@ void Cubo::dibujar(Shaders& shader) {
 
     for (int i = 0; i < 6; ++i) {
         if (texturas[i]) {
-            textura[i].usar();         
+            textura[i].usar(0);         
             shader.SetUnidadTextura(0);
             shader.SetUsarTextura(true);
         } else {
